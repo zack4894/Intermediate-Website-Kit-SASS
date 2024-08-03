@@ -2,8 +2,10 @@
 /*-- -------------------------- -->
 <---           Hero             -->
 <--- -------------------------- -*/
+
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
+
   #hero {
     z-index: 1;
     position: relative;
@@ -12,10 +14,11 @@
     /* changes on tablet */
     padding: 0 1rem;
     padding-bottom: 6.25rem;
-    font-family: "Roboto", "Arial", sans-serif;
+    font-family: 'Tienne', sans-serif;
     /* Centers button */
     text-align: center;
   }
+
   #hero .cs-picture {
     z-index: -2;
     position: absolute;
@@ -26,6 +29,7 @@
     /* Background Image */
     width: 100%;
   }
+
   #hero .cs-picture img {
     position: absolute;
     top: 0;
@@ -35,6 +39,7 @@
     /* Makes image act like a background-image */
     object-fit: cover;
   }
+
   #hero .cs-picture:before {
     z-index: 1;
     position: absolute;
@@ -50,6 +55,7 @@
     /* prevents the cursor from interacting with it */
     pointer-events: none;
   }
+
   #hero .cs-container {
     position: relative;
     margin: auto;
@@ -60,6 +66,7 @@
     /* changes on tablet */
     padding: clamp(9em, 25.95vw, 17.5em) 0;
   }
+
   #hero .cs-container:before {
     position: absolute;
     top: 0;
@@ -73,6 +80,7 @@
     height: 100%;
     width: 1px;
   }
+
   #hero .cs-flex-group {
     display: flex;
     flex-wrap: wrap;
@@ -86,16 +94,19 @@
     width: 80vw;
     box-sizing: border-box;
   }
+
   #hero .cs-topper {
     margin-bottom: 1rem;
     color: var(--primary);
     text-align: center;
   }
+
   #hero .cs-title {
     width: 100%;
     color: var(--bodyTextColorWhite);
     text-align: center;
   }
+
   #hero .cs-text {
     /* 32px - 40px */
     margin: 0 auto clamp(2rem, 4vw, 2.5rem) 0;
@@ -104,11 +115,13 @@
     color: var(--bodyTextColorWhite);
     text-align: center;
   }
+
   #hero .cs-button-solid {
     margin-bottom: 1rem;
     height: initial;
     line-height: clamp(2.875em, 5.5vw, 3.5em);
   }
+
   #hero .cs-button-transparent {
     z-index: 1;
     position: relative;
@@ -130,10 +143,12 @@
     font-weight: 700;
     color: #fff;
   }
+
   #hero .cs-button-transparent .cs-img {
     display: block;
     margin-right: 0.75rem;
   }
+
   #hero .cs-button-transparent:before {
     z-index: -1;
     position: absolute;
@@ -151,10 +166,12 @@
     transition: transform 0.3s;
     transform-origin: left;
   }
+
   #hero .cs-button-transparent:hover:before {
     transform: scaleX(1);
   }
 }
+
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
   #hero {
@@ -182,6 +199,7 @@
     margin-bottom: 0;
   }
 }
+
 /* Desktop Parallax Effect - 1300px */
 @media only screen and (min-width: 81.25em) {
   #hero {
@@ -193,15 +211,18 @@
     background-attachment: fixed;
   }
 }
+
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
   body.dark-mode #hero .cs-background:before {
     opacity: 0.8;
   }
 }
+
 /*-- -------------------------- -->
 <---          Services          -->
 <--- -------------------------- -*/
+
 /* Mobile */
 @media only screen and (min-width: 0rem) {
   .services {
@@ -258,8 +279,10 @@
     margin-bottom: 0;
   }
 }
+
 /* Inbetween */
 @media only screen and (min-width: 768px) {
+
   .services {
     display: flex;
     justify-content: space-between;
@@ -267,11 +290,14 @@
     width: 98%;
     font-size: min(1.8vw, 1em);
   }
+
   .services .card {
     margin: 0;
     max-width: 20.3125em;
   }
+
 }
+
 /* Large Desktop */
 @media only screen and (min-width: 1300px) {
   .services {
@@ -281,6 +307,7 @@
     max-width: 22.3125em;
   }
 }
+
 /* Dark mode */
 @media only screen and (min-width: 0rem) {
   body.dark-mode #services {
@@ -294,5 +321,3 @@
     color: #fff;
   }
 }
-
-/*# sourceMappingURL=critical.css.map */
